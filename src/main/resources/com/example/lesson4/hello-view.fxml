@@ -16,27 +16,15 @@
         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
     </padding>
 
+    <TextArea minHeight="550" fx:id="textArea" VBox.vgrow="ALWAYS" editable="false" maxHeight="Infinity"
+              promptText="Введите текст"/>
 
-
-            <TextArea minHeight="550" fx:id="textArea" VBox.vgrow="ALWAYS" editable="false" maxHeight="Infinity" promptText="Введите текст"/>
-
-                <BorderPane>
-                    <bottom>
-                        <HBox>
-                            <TextField fx:id="textField" HBox.hgrow="ALWAYS" promptText="Введите текст" onAction="#onHelloButtonClick"/>
-                            <Button text="Отправить!"  />
-                        </HBox>
-                    </bottom>
-                </BorderPane>
-
-
-
-
-
-
-
-
-
-
-
+    <BorderPane>
+        <bottom>
+            <HBox>
+                <TextField fx:id="textField" HBox.hgrow="ALWAYS" promptText="Введите текст" onAction="#enterBtn"/>
+                <Button text="Отправить!" onAction="#enterBtn"/>
+            </HBox>
+        </bottom>
+    </BorderPane>
 </VBox>
